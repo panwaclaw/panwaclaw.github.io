@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PANWACŁAW</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/static/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#343a40">
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#343a40">
+    <meta name="msapplication-TileImage" content="/static/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#343a40">
+
+    <meta name="description" content="Wacław Kozłowski // Python Fullstack Developer">
+    <meta name="keywords" content="panwaclaw python fullstack">
+
+    <meta property="og:title" content="PANWACŁAW">
+    <meta property="og:image" content="https://panwaclaw.github.io/static/img/ogimage.png">
+    <meta property="og:url" content="https://panczeslaw.github.io/">
+    <meta property="og:site_name" content="PANWACŁAW">
+    <meta property="og:description" content="Wacław Kozłowski // Python Fullstack Developer">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PANWACŁAW">
+    <meta name="twitter:description" content="Wacław Kozłowski // Python Fullstack Developer">
+    <meta name="twitter:image:src" content="https://panwaclaw.github.io/static/img/ogimage.png">
+    <meta name="twitter:url" content="https://panwaclaw.github.io/">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125469683-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125469683-1');
+    </script>
+  </head>
+  <body class="bg-dark">
+    <main>
+      <div class="vh-100" id="top">
+        <div class="container-fluid diagonal-stripe-1 h-100">
+          <div class="row h-100">
+            <div class="col my-auto text-white">
+              <div class="pl-lg-5 pl-md-4 pl-sm-3">
+                <h1 id="nickname" class="text-uppercase"></h1>
+                <h4 id="full-name"></h4>
+                <h4 id="job-name"></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vh-100" id="about">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="col-sm my-sm-auto mt-auto text-white order-sm-2">
+              <div class="pr-lg-5 pr-md-4 pr-sm-3">
+                <h1 class="text-uppercase text-md-right">About me</h1>
+              </div>
+            </div>
+            <div class="col-sm my-sm-auto mb-auto text-white pl-lg-5 pl-md-4 pl-sm-3 order-sm-1">
+              <dl class="row">
+                <dt class="col-lg-2 col-md-3 col-sm-4 col-5">Age</dt>
+                <dd class="col-lg-10 col-md-9 col-sm-8 col-7" id="age"></dd>
+                <dt class="col-lg-2 col-md-3 col-sm-4 col-5">Location</dt>
+                <dd class="col-lg-10 col-md-9 col-sm-8 col-7">Minsk, BY</dd>
+                <dt class="col-lg-2 col-md-3 col-sm-4 col-5">Education</dt>
+                <dd class="col-lg-10 col-md-9 col-sm-8 col-7">FAMCS BSU '21</dd>
+                <dt class="col-lg-2 col-md-3 col-sm-4 col-5">Job</dt>
+                <dd class="col-lg-10 col-md-9 col-sm-8 col-7">Python/Django Fullstack Developer at BlackFort</dd>
+                <dt class="col-lg-2 col-md-3 col-sm-4 col-5">Skills</dt>
+                <dd class="col-lg-10 col-md-9 col-sm-8 col-7">
+                  <span class="badge badge-pill badge-dark">Python</span>
+                  <span class="badge badge-pill badge-dark">C++</span>
+                  <span class="badge badge-pill badge-dark">HTML</span>
+                  <span class="badge badge-pill badge-dark">CSS</span>
+                  <span class="badge badge-pill badge-dark">JavaScript</span>
+                  <span class="badge badge-pill badge-dark">SQL</span>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="work-experience">
+        <div class="container-fluid diagonal-stripe-2 mvh-100 h-100">
+          <div class="row">
+            <div class="col-md-5 my-sm-auto mt-auto text-white">
+              <div class="pl-lg-5 pl-md-4 pl-sm-3">
+                <h1 class="text-uppercase">Work experience</h1>
+              </div>
+            </div>
+            <div class="col-md-7 my-sm-auto mb-auto text-white">
+              <p class="lead">Own projects</p>
+              <dl class="row">
+                <dt class="col-lg-3 col-sm-4">Telegram Music Bot<br>May '18</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Used Telegram cloud system to collect big amount of files and make serverless data storage</li>
+                    <li>Implemented tracks' metadata collection by scraping private Yandex.Music API</li>
+                  </ul>
+                </dd>
+                <dt class="col-lg-3 col-sm-4">BycardByBot<br>Aug '18</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Disclosed server’s private API by mobile app package sniffering</li>
+                    <li>Implemented Telegram authentication module on bot’s website to log in with the bot</li>
+                  </ul>
+                </dd>
+                <dt class="col-lg-3 col-sm-4">Atlantyda<br>Jan '19</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Designed and implemented web UI</li>
+                    <li>Implemented notification center for users in the chat with community by VK API</li>
+                    <li>Resourse optimization done to achieve high pageload speed both for mobile and desktop</li>
+                  </ul>
+                </dd>
+                <dt class="col-lg-3 col-sm-4">BlackFortPay<br>Apr '20</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Python client for BlackFort Payment API</li>
+                  </ul>
+                </dd>
+              </dl>
+              <p class="lead">Freelance</p>
+              <dl class="row">
+                <dt class="col-lg-3 col-sm-4">Tour agency website<br>Jul '19</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Integrated merchant tools to pay online</li>
+                    <li>Configured notification process through E-mail using Django builtins</li>
+                  </ul>
+                </dd>
+              </dl>
+              <p class="lead">Volunteering</p>
+              <dl class="row">
+                <dt class="col-lg-3 col-sm-4">Telegram Support Force<br>CIS region<br>Apr '18 — Apr '19</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Providing support for users, answer their questions</li>
+                    <li>Bug searching</li>
+                    <li>Translating messenger apps</li>
+                  </ul>
+                </dd>
+                <dt class="col-lg-3 col-sm-4">EMERGEconf<br>Minsk<br>Jun '19</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Support team in order to resolve any problem before and during the conference</li>
+                  </ul>
+                </dd>
+                <dt class="col-lg-3 col-sm-4">2nd European Games<br>Minsk<br>Jun '19</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Providing cultural and city information at information point</li>
+                  </ul>
+                </dd>
+                <dt class="col-lg-3 col-sm-4">Population census<br>Minsk<br>Oct '19</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Collection of information from the population in accordance with the survey questionnaire</li>
+                  </ul>
+                </dd>
+              </dl>
+              <p class="lead">Software Engineer at Huge Turtle, Belarus</p>
+              <dl class="row">
+                <dt class="col-lg-3 col-sm-4">Cryptoexchanges Trades Data Scraper<br>Nov '19</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Implemented Pub/Sub system to parallelize processes on server</li>
+                    <li>Automated notifying about errors using Slack API</li>
+                    <li>Improved speed of collecting data</li>
+                    <li>Implemented algorithms to select date range in cases if API servers are down</
+                    <li>Used firestore to store encrypted API credentials</li>
+                  </ul>
+                </dd>
+              </dl>
+              <p class="lead">Python/Django Fullstack Developer at BlackFort <span class="badge badge-dark">Remote</span></p>
+              <dl class="row">
+                <dt class="col-lg-3 col-sm-4">AuroGold<br>Apr '20</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Ethereum-based token distribution and mass payout to end-user</li>
+                  </ul>
+                </dd>
+                <dt class="col-lg-3 col-sm-4">BlackFort Wallet Referral<br>May '20</dt>
+                <dd class="col-lg-9 col-sm-8">
+                  <ul>
+                    <li>Created API for Wallet mobile apps to push data</li>
+                    <li>SSO from Wallet app to see detailed referral dashboard</li>
+                    <li>Automated agreggated mass payouts</li>
+                    <li>Fetching data from blockchain for internal use</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vh-100" id="contacts">
+        <div class="container-fluid h-100 diagonal-stripe-3">
+          <div class="row h-100">
+            <div class="col-sm my-sm-auto mt-auto text-white">
+              <div class="pl-lg-5 pl-md-4 pl-sm-3">
+                <h1 class="text-uppercase">Contacts</h1>
+              </div>
+            </div>
+            <div class="col-sm my-sm-auto mb-auto text-white">
+              <div class="d-flex my-1">
+                <div class="flex-shrink-1"><i class="fab fa-telegram-plane"></i></div>
+                <div><a href="https://t.me/vkozlovsk">vkozlovsk</a></div>
+              </div>
+              <div class="d-flex my-1">
+                <div class="flex-shrink-1"><i class="fab fa-vk"></i></div>
+                <div><a href="https://vk.com/vkozlovsk">vkozlovsk</a></div>
+              </div>
+              <div class="d-flex my-1">
+                <div class="flex-shrink-1"><i class="fab fa-instagram"></i></div>
+                <div><a href="https://instagram.com/vkozlovsk">vkozlovsk</a></div>
+              </div>
+              <div class="d-flex my-1">
+                <div class="flex-shrink-1"><i class="fab fa-github"></i></div>
+                <div><a href="https://gtihub.com/panwaclaw">panwaclaw</a></div>
+              </div>
+              <div class="d-flex my-1">
+                <div class="flex-shrink-1"><i class="fab fa-linkedin"></i></div>
+                <div><a href="https://www.linkedin.com/in/wac%C5%82aw-koz%C5%82owski-38b9b716a/">Wacław Kozłowski</a></div>
+              </div>
+              <div class="d-flex my-1">
+                <div class="flex-shrink-1"><i class="fas fa-at"></i></div>
+                <div><a href="mailto:vkozlovsk@gmail.com">vkozlovsk@gmail.com</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/301e860ea6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/CSSRulePlugin.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" integrity="sha256-SRwTaJ23C2rbMXapp5JkS+dXii+TFSH1yxmdMTohw1k=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+    <script src="/static/js/typing.js"></script>
+    <script src="/static/js/birthday.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        gsap.registerPlugin(CSSRulePlugin);
+
+        let controller = new ScrollMagic.Controller({
+          globalSceneOptions: { triggerHook: 0 }
+        });
+
+        let tween = gsap.to(CSSRulePlugin.getRule(".diagonal-stripe-1:before"), {
+          cssRule: { left: '-90vw', position: 'fixed', width: '290vw'},
+          ease: "power1.in",
+          autoRound: false,
+        });
+
+        let tween2 = gsap.to(CSSRulePlugin.getRule(".diagonal-stripe-1:before"), {
+          cssRule: { top: '18vh', left: '0vw', width: '100vw', height: '60vh', skewY: "-10deg", skewX: '0deg', position: 'fixed'},
+          ease: "power1.in",
+          autoRound: false,
+        });
+
+        let tween3 = gsap.to(CSSRulePlugin.getRule(".diagonal-stripe-1:before"), {
+          cssRule: { top: '-42vh', position: 'fixed'},
+          ease: "none",
+          autoRound: false,
+        });
+
+        let tween4 = gsap.to(CSSRulePlugin.getRule(".diagonal-stripe-2:before"), {
+          cssRule: { position: 'fixed', width: '120vw'},
+          ease: "none",
+          autoRound: false,
+        });
+
+        let tween5 = gsap.to(CSSRulePlugin.getRule(".diagonal-stripe-2:before"), {
+          cssRule: { left: "80vw", width: '30vw',  position: 'fixed', },
+          ease: "none",
+          autoRound: false,
+        });
+
+        let tween6 = gsap.to(CSSRulePlugin.getRule(".diagonal-stripe-3:before"), {
+          cssRule: { top: "27.5vh", height: "45vh", position: 'fixed', },
+          ease: "none",
+          autoRound: false,
+        });
+        
+        // build scene and set duration to window height
+        new ScrollMagic.Scene({triggerElement: "#top", duration: "75%"})
+                .setPin('.diagonal-stripe-1:before')
+                .setTween(tween)
+                //.addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        new ScrollMagic.Scene({triggerElement: "#about", duration: "25%", offset: -$("#about").height() / 4})
+                .setPin('.diagonal-stripe-1:before')
+                .setTween(tween2)
+                //.addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        new ScrollMagic.Scene({triggerElement: "#about", duration: "60%"})
+                .setPin('.diagonal-stripe-1:before')
+                .setTween(tween3)
+                //.addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        new ScrollMagic.Scene({triggerElement: "#about", duration: "75%", offset: $('#about').height() / 3})
+                .setPin('.diagonal-stripe-2:before')
+                .setTween(tween4)
+                //.addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        new ScrollMagic.Scene({triggerElement: "#contacts", duration: "100%", offset: -$('#contacts').height()})
+                .setPin('.diagonal-stripe-2:before')
+                .setTween(tween5)
+                //.addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+
+        new ScrollMagic.Scene({triggerElement: "#contacts", duration: "25%", offset: -$('#contacts').height() / 4})
+                .setPin('.diagonal-stripe-3:before')
+                .setTween(tween6)
+                //.addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+      });
+    </script>
+  </body>
+</html>

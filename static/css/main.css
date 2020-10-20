@@ -1,0 +1,69 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  position: relative;
+}
+
+.mvh-100 {
+  min-height: 100vh;
+}
+
+.diagonal-stripe-1, .diagonal-stripe-2, .diagonal-stripe-3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.diagonal-stripe-1::before, .diagonal-stripe-2::before, .diagonal-stripe-3::before {
+  content: '';
+  position: absolute;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.diagonal-stripe-1::before {
+  top: 0vh;
+  left: 50vw;
+  height: 100vh;
+  width: 40vw;
+  background-image: linear-gradient(60deg, var(--indigo), var(--red));   
+  transform: skewX(-30deg);
+}
+
+.diagonal-stripe-2::before {
+  top: 0vh;
+  left: -100vw;
+  height: 100vh;
+  width: 40vw;
+  background-image: linear-gradient(30deg, var(--green), var(--blue));   
+  transform: skewX(15deg);
+}
+
+
+.diagonal-stripe-3::before {
+  top: -35vh;
+  left: -50vw;
+  height: 0vh;
+  width: 150vw;
+  background-image: linear-gradient(120deg, var(--red), var(--yellow));   
+  transform: skewY(5deg);
+}
+
+ul {
+  padding-inline-start: 19.5px;
+}
+
+a {
+  color: var(--white);
+}
+
+a:hover {
+  color: #ddd;
+}
+
+i.fas, i.fab, i.far {
+  min-width: 2rem;
+}
+
+@media (min-width: 576px) {
+  #work-experience dt {
+    margin-bottom: 1rem;
+  }
+}
